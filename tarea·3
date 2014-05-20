@@ -1,0 +1,50 @@
+package tarea3;
+import java.util.Scanner;
+public class tarea3 {
+
+	public static void main(String[] args) {
+		
+		Scanner lea =new Scanner(System.in);
+        //ingresa una pregunta
+       System.out.print("Ingrese el Nombre de usuario para el Primer Jugador:" );
+      	//va a leer la respuesta  
+       String resp1 = lea.next();
+       //Se va a colocar la pregunta del puntaje
+        System.out.print("Ingrese su puntuaje:" );
+        //Se usa un int por ser numeros
+         int score1 = lea.nextInt();
+       System.out.print("Ingrese el nombre de usuario del Segundo Jugador:" ); 
+       String resp2 = lea.next();
+         System.out.print("Ingrese su Puntuaje:" );
+       int score2 = lea.nextInt();
+       System.out.print("Ingrese el Nombre de usuario del Tercer Jugador:" );
+       String resp3 = lea.next();
+         System.out.print("Ingrese su Puntaje:" );
+       int score3 = lea.nextInt();
+       //aqui vamos a calcular el promedio
+       System.out.print("*el promedio del puntaje es: "+(score1+score2+score3)/3);
+      //aplicamos las condiciones
+       System.out.print("\n *");
+       if (score1>score2 && score1>score3) {
+           System.out.print("El Mayor Puntaje es: "+resp1+" "+score1+"\n");
+       } else {
+           if (score2>score3) {
+               System.out.print("El Mayor Puntaje es: "+resp2+" "+score2+"\n");
+           } else {
+              System.out.print("El Mayor Puntaje es: "+resp3+" "+score3+"\n");
+           }
+       }
+       System.out.print("*");
+       if (score1<score2 && score1<score3) {
+          System.out.print("El puntaje mas bajo es: "+resp1+" "+score1+"");
+       } else {
+           if (score2<score3) {
+               System.out.print("El puntaje mas bajo es: "+resp2+" "+score2+"");
+           } else {
+              System.out.print("El puntaje mas bajo es: "+resp3+" "+score3+"");
+           }
+       }
+       //guiarme... https://github.com/IvethS/TareaPuntaje/blob/master/src/TareaPuntajes.java
+	}
+
+}

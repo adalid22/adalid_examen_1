@@ -1,0 +1,124 @@
+package progra;
+import java.util.Scanner;
+
+public class examm2 {
+
+	public static void main(String[] args) {
+
+	//tenemos el scanner que nunca debe faltar en est clase de programas//
+        Scanner lea =new Scanner(System.in);
+        //aqui vamos a declarar una variable de la suma de todas las respuestas buenas.
+        System.out.println(" ENCUESTA DEL FUTBOL MUNDIAL!!!!!! ");
+        System.out.println(" se va a  ganarr un lamborgini con 5 respuestas correctas");
+        System.out.println(" buena suerte!!!!! ");
+        int puntos=0;
+         //vamos a comenzar con las preguntas de la encuesta//
+        System.out.println("1.cuantos mundiales a ganado brasil?" );
+       	//leer la respuesta
+        String resp1 = lea.next();
+        //miramos la respuesta correcta//
+           String opcion_correcta1="5";
+           //si la resp. esta bien sumaremos un punto// 
+           //si la resp. esta mala no sumara y le dira la respuesta que era//
+            if (resp1.equalsIgnoreCase(opcion_correcta1)){
+		 puntos=+1;	
+             System.out.print("Correcto\n");
+         }
+         else {
+			System.out.print("Incorrecto La respuesta correcta era 5\n");
+    }
+            //haremos lo mismo en todas//
+        System.out.println("2.Cristiano Ronaldo milita en el Real Madrid?");
+        String resp2 = lea.next();
+        String opcion_correcta2="si";
+            
+          if (resp2.equalsIgnoreCase(opcion_correcta2)){
+		 puntos=puntos+1;	
+             System.out.print("Correcto\n");
+         }
+         else {
+			System.out.print("Incorrecto La respuesta correcta era si\n");
+    }
+        System.out.println("3.quien fue nombrado mejor jugador del mundo del 2013?");
+        String resp3 = lea.next();
+         String opcion_correcta3="MESSI";
+           if (resp3.equalsIgnoreCase(opcion_correcta3)){
+		puntos=puntos+1;	
+             System.out.print("Correcto\n");
+         }
+         else {
+			System.out.print("Incorrecto La respuesta correcta era  messi\n");
+    }
+         System.out.println("4.nombre del presidente del real madrid?");
+        String resp4 = lea.next();
+         String opcion_correcta4="florentino";
+           if (resp4.equalsIgnoreCase(opcion_correcta4)){
+		puntos=puntos+1;
+             System.out.print("Correcto\n");
+         }
+         else {
+			System.out.print("Incorrecto La respuesta correcta era florentino\n");
+    }
+         System.out.println("5.que pais tiene la liga mas exigente del mundo?");
+        String resp5 = lea.next();
+         String opcion_correcta5="inglaterra";
+          if (resp5.equalsIgnoreCase(opcion_correcta5)){
+		puntos=puntos+1;	
+             System.out.print("Correcto\n");
+         }
+         else {
+			System.out.print("Incorrecto La respuesta correcta era inglaterra\n");
+    }
+          System.out.println("6.campeon de la liga de españa?/n");
+          String resp6 = lea.next();
+           String opcion_correcta6	="atletico";
+            if (resp5.equalsIgnoreCase(opcion_correcta6)){
+  		puntos=puntos+1;	
+               System.out.print("Correcto\n");
+           }
+           else {
+  			System.out.print("Incorrecto La respuesta correcta era atletico	\n");
+      }
+            System.out.println("7.olimpia es el mejor equipo de la liga hondureña?/n");
+            String resp7= lea.next();
+             String opcion_correcta7="si";
+              if (resp5.equalsIgnoreCase(opcion_correcta7)){
+    		puntos=puntos+1;	
+                 System.out.print("Correcto\n");
+             }
+             else {
+    			System.out.print("Incorrecto La respuesta correcta era olimpia/n");
+        }
+       
+        //sumaremos todos los puntos correctos//
+   System.out.print("Total de Preguntas Correctas son: "+puntos+"\n\n");
+   //sacaremos el porcentaje con un float
+   float porcentaje;            
+   //la cantidad de respuestas buenas por 100 entre 5//
+   porcentaje=(puntos * 100 / 	7);
+   //mostrara el porcentaje
+         System.out.print("El porcentaje total es: "+porcentaje+"%\n");
+       //le daremos gracia al programa con unos comentarios luego de la cantidad//
+         if (porcentaje==100) {
+            System.out.print("Excelente usted se a ganado el lamborgini(un hotwheels xD hahahahahaha)\n");
+        } else {
+         if (porcentaje>=80) {
+            System.out.print("sabe mucho pero Salvador Nasrrrala le gana\n");
+        } else {
+            if (porcentaje>=60) {
+                System.out.print("bueno, puede participar en X 0\n");
+            } else {
+                if (porcentaje>=40) {
+                    System.out.print("tiene algo bajo el conocimiento en futbol\n");
+                } else {
+                    System.out.print("no sabe nada, vayase!!!!\n");
+                }
+
+           }
+            }
+        }
+         /* obtuve un poco de ayuda paara guiarme en https://github.com/IvethS/SegundaParte/blob/master/src/SegundaParteExamen.java
+          */
+
+	}
+}
